@@ -4,6 +4,7 @@ const multer = require("multer");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const cloudinary = require("cloudinary").v2;
+import pg from "pg";
 //Config
 dotenv.config();
 
