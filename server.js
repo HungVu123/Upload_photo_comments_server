@@ -8,7 +8,6 @@ const cloudinary = require("cloudinary").v2;
 dotenv.config();
 
 const { Sequelize, DataTypes } = require("sequelize");
-const path = require("path");
 
 var corsOptions = {
   origin: "*",
@@ -113,7 +112,7 @@ app.post("/comments", async (req, res) => {
 });
 
 // Route to get photos with comments
-app.get("/photos", async (req, res) => {
+app.get("/", async (req, res) => {
   const photos = await Photo.findAll({
     include: Comment,
   });
