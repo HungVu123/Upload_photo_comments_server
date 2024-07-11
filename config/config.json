@@ -1,0 +1,30 @@
+{
+  "development": {
+    "username": "default",
+    "password": "fnBlaL0kRZ4P",
+    "database": "verceldb",
+    "host": "ep-odd-fog-a1skjuk3-pooler.ap-southeast-1.aws.neon.tech",
+    "dialect": "postgres",
+    "ssl": true,
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
